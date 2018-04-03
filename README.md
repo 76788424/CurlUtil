@@ -4,7 +4,7 @@ CurlUtil.php 是对 PHP CURL 的封装。使用单例模式，封装了最常用
 
 ## Usage
 
-### Init
+* Init
 ```php
 const API_URL = '';
 
@@ -17,22 +17,22 @@ $postData = [
 $curl = CurlUtil::getInstance();
 ```
 
-### Get
+* Get
 ```php
 $curl->get(API_URL);
 ```
 
-### Post （formData ）
+* Post （formData ）
 ```php
 $curl->get(API_URL);
 ```
 
-### Post （jsonData）
+* Post （jsonData）
 ```php
 $curl->post(API_URL, $postData, true);
 ```
 
-### Https
+* Https
 ```php
 $curl->ssl()->get(API_URL);
 $curl->ssl()->post(API_URL, $formData);
