@@ -5,7 +5,6 @@
  */
 class CurlUtil
 {
-	
 	//单例
 	private static $instance = null;
 	//curl 句柄
